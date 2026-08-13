@@ -244,8 +244,10 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script="">
 
+const VALID_VIEWS = ['about', 'lessons', 'instructors', 'facility', 'reviews'];
+
 class Component extends DCLogic {
-  state = { view: 'home' };
+  state = { view: VALID_VIEWS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'home' };
   _seen = new Set();
   _observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -256,14 +258,30 @@ class Component extends DCLogic {
       }
     });
   }, { threshold: 0.15 });
+  _onPopState = (e) => {
+    this._applyView((e.state && e.state.view) || 'home');
+  };
+  componentDidMount() {
+    // Replace the initial history entry with one carrying view state, so the
+    // very first popstate (browser back after in-site navigation) has
+    // something to compare against instead of leaving the site entirely.
+    history.replaceState({ view: this.state.view }, '', location.pathname + location.search + (this.state.view === 'home' ? '' : '#' + this.state.view));
+    window.addEventListener('popstate', this._onPopState);
+  }
   componentWillUnmount() {
     if (this._observer) this._observer.disconnect();
+    window.removeEventListener('popstate', this._onPopState);
   }
-  setView(v) {
+  _applyView(v) {
     this.setState({ view: v });
     window.scrollTo(0, 0);
     const navToggle = document.getElementById('nav-toggle');
     if (navToggle) navToggle.checked = false;
+  }
+  setView(v) {
+    if (v === this.state.view) return;
+    this._applyView(v);
+    history.pushState({ view: v }, '', v === 'home' ? location.pathname + location.search : '#' + v);
   }
   renderVals() {
     const v = this.state.view;
