@@ -1,0 +1,52 @@
+<x-dc>
+
+  <div style="animation:fadeIn .4s ease-out;">
+
+    <div style="position:relative;height:260px;overflow:hidden;">
+      <image-slot id="instructors-banner" shape="rect" placeholder="강사진 참고 사진" style="width:100%;height:100%;position:absolute;inset:0;opacity:0.4;" src="assets/images/instructors-banner.webp"></image-slot>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,0.5),#080808 92%);pointer-events:none;"></div>
+      <div style="position:relative;max-width:1200px;margin:0 auto;padding:90px clamp(20px,5vw,64px) 0;pointer-events:none;">
+        <div class="eyebrow" style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#e8354a;font-family:'DM Sans',sans-serif;margin-bottom:14px;">Instructor</div>
+        <h1 style="font-size:clamp(28px,6vw,44px);font-weight:300;margin:0;">강사 <strong style="font-weight:700;">소개</strong></h1>
+      </div>
+    </div>
+
+    <div class="director-full-grid" style="max-width:1200px;margin:0 auto 90px;padding:0 clamp(20px,5vw,64px);display:grid;grid-template-columns:minmax(180px,280px) minmax(0,1fr);gap:70px;align-items:start;">
+      <div style="position:relative;aspect-ratio:3/4;border-radius:3px;overflow:hidden;">
+        <image-slot id="director-photo-full" shape="rounded" radius="3" placeholder="원장 변혁진 사진" style="width:100%;height:100%;" src="assets/images/director-portrait-full.webp"></image-slot>
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:28px 18px 18px;background:linear-gradient(to top,rgba(0,0,0,0.88),transparent);pointer-events:none;">
+          <div style="font-size:19px;">변혁진</div>
+          <div style="font-size:11px;color:#e8354a;letter-spacing:0.1em;text-transform:uppercase;font-family:'DM Sans',sans-serif;">대표 원장 · Guitarist</div>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:16px;color:rgba(242,237,232,0.7);line-height:1.9;margin:0 0 24px;">핑거스타일 전문 기타학원 힛더기타 원장 변혁진입니다.<br>10여년간 <em style="font-style:normal;color:#e8354a;">핑거스타일 전문 수업</em>을 진행 중입니다.</p>
+        <div style="margin-bottom:26px;">
+          <div style="display:grid;grid-template-columns:60px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.08);"><div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#e8354a;">활동</div><div style="font-size:14px;color:rgba(242,237,232,0.68);">세계적인 연주자 Peterri Sariola 전곡 채보 담당<br>이전 고퍼우드 기타 엔도서 활동</div></div>
+          <div style="display:grid;grid-template-columns:60px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.08);"><div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#e8354a;">전문</div><div style="font-size:14px;color:rgba(242,237,232,0.68);">핑거스타일 기타 · 일렉기타 · 키보드 · 이펙터 컨설팅 · 라이브 음향 · 아이패드 녹음 · 실용 화성학 · 악보 제작</div></div>
+          <div style="display:grid;grid-template-columns:60px 1fr;gap:16px;padding:18px 0;"><div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#e8354a;">운영</div><div style="font-size:14px;color:rgba(242,237,232,0.68);">힛더기타 음악학원 대표 원장<br>서울, 광주, 포항, 창원 등 MOOZ를 통한 전국 강의 중</div></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="border:1px solid rgba(232,53,74,0.25);color:rgba(232,53,74,0.85);font-size:12px;padding:4px 10px;border-radius:2px;">핑거스타일</span><span style="border:1px solid rgba(232,53,74,0.25);color:rgba(232,53,74,0.85);font-size:12px;padding:4px 10px;border-radius:2px;">코타로 오시오</span><span style="border:1px solid rgba(232,53,74,0.25);color:rgba(232,53,74,0.85);font-size:12px;padding:4px 10px;border-radius:2px;">마르신</span><span style="border:1px solid rgba(232,53,74,0.25);color:rgba(232,53,74,0.85);font-size:12px;padding:4px 10px;border-radius:2px;">저스틴 킹</span><span style="border:1px solid rgba(232,53,74,0.25);color:rgba(232,53,74,0.85);font-size:12px;padding:4px 10px;border-radius:2px;">존 곰</span><span style="border:1px solid rgba(232,53,74,0.25);color:rgba(232,53,74,0.85);font-size:12px;padding:4px 10px;border-radius:2px;">김진산</span><span style="border:1px solid rgba(232,53,74,0.25);color:rgba(232,53,74,0.85);font-size:12px;padding:4px 10px;border-radius:2px;">통기타</span><span style="border:1px solid rgba(232,53,74,0.25);color:rgba(232,53,74,0.85);font-size:12px;padding:4px 10px;border-radius:2px;">일렉기타</span><span style="border:1px solid rgba(232,53,74,0.25);color:rgba(232,53,74,0.85);font-size:12px;padding:4px 10px;border-radius:2px;">음향 컨설팅</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width:1200px;margin:0 auto 90px;padding:0 clamp(20px,5vw,64px);">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:20px;"><span style="width:16px;height:1px;background:#e8354a;"></span><div style="font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#f2ede8;font-family:'DM Sans',sans-serif;font-weight:500;">활동 &amp; 커리어</div></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
+      <div style="position:relative;width:100%;padding-top:100%;"><image-slot id="director-ref-1" shape="rounded" radius="3" placeholder="화상 수업" style="position:absolute;inset:0;width:100%;height:100%;" src="assets/images/director-video-lesson.webp"></image-slot><div style="position:absolute;inset:0;background:rgba(0,0,0,0.28);pointer-events:none;border-radius:3px;"></div></div>
+      <div style="position:relative;width:100%;padding-top:100%;"><image-slot id="director-ref-2" shape="rounded" radius="3" placeholder="공연" style="position:absolute;inset:0;width:100%;height:100%;" src="assets/images/director-performance.webp"></image-slot><div style="position:absolute;inset:0;background:rgba(0,0,0,0.28);pointer-events:none;border-radius:3px;"></div></div>
+      <div style="position:relative;width:100%;padding-top:100%;"><image-slot id="director-ref-3" shape="rounded" radius="3" placeholder="악보 제작" style="position:absolute;inset:0;width:100%;height:100%;" src="assets/images/director-sheet-music.webp"></image-slot><div style="position:absolute;inset:0;background:rgba(0,0,0,0.28);pointer-events:none;border-radius:3px;"></div></div>
+      <div style="position:relative;width:100%;padding-top:100%;"><image-slot id="director-ref-4" shape="rounded" radius="3" placeholder="페달보드" style="position:absolute;inset:0;width:100%;height:100%;" src="assets/images/director-pedalboard.webp"></image-slot><div style="position:absolute;inset:0;background:rgba(0,0,0,0.28);pointer-events:none;border-radius:3px;"></div></div>
+    </div>
+    </div>
+
+
+    <div style="text-align:center;padding:0 clamp(20px,5vw,64px) 100px;">
+      <a href="https://m.booking.naver.com/booking/6/bizes/1390498?theme=place&amp;entry=pll&amp;lang=ko" target="_blank" style="background:#e8354a;color:#f2ede8;padding:15px 34px;border-radius:2px;font-size:15px;font-weight:500;">상담 문의하기</a>
+    </div>
+
+  </div>
+  
+</x-dc>

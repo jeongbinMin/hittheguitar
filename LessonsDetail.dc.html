@@ -1,0 +1,149 @@
+<x-dc>
+
+  <div style="animation:fadeIn .4s ease-out;">
+
+    <div style="position:relative;height:280px;overflow:hidden;">
+      <image-slot id="lessons-banner" shape="rect" placeholder="레슨 현장 사진" style="width:100%;height:100%;position:absolute;inset:0;opacity:0.4;filter:saturate(0.55) brightness(0.85) contrast(0.92);" src="assets/images/lessons-banner.webp"></image-slot>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,0.5),#080808 92%);pointer-events:none;"></div>
+      <div style="position:relative;max-width:1200px;margin:0 auto;padding:90px clamp(20px,5vw,64px) 0;pointer-events:none;">
+        <div class="eyebrow" style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#e8354a;font-family:'DM Sans',sans-serif;margin-bottom:14px;">Lessons &amp; Pricing</div>
+        <h1 style="font-size:clamp(28px,6vw,44px);font-weight:300;margin:0 0 16px;">수업 <strong style="font-weight:700;">안내</strong></h1>
+        <p style="font-size:15px;color:rgba(242,237,232,0.68);max-width:520px;margin:0;">월 4회 기준 (1회 1시간)에 대한 정보입니다.</p>
+      </div>
+    </div>
+
+
+    <div style="max-width:900px;margin:0 auto 48px;padding:0 clamp(20px,5vw,64px);">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:18px;"><span style="width:16px;height:1px;background:#e8354a;"></span><div style="font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#f2ede8;font-family:'DM Sans',sans-serif;font-weight:500;">취미반 — 재밌게 시작하기</div></div>
+      <div style="background:#131313;border:1px solid rgba(255,255,255,0.08);border-radius:6px;overflow:hidden;">
+        <div class="price-row" style="padding:22px 24px;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <div class="price-info">
+            <div style="font-size:16px;font-weight:500;margin-bottom:6px;">취미반 · 통기타 / 일렉기타 / 베이스</div>
+            <div style="font-size:13px;color:rgba(242,237,232,0.6);">개인 레슨 · 즐겁고 부담없이</div>
+          </div>
+          <div class="price-tag">
+            <div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#f2ede8;">160,000<span style="font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(242,237,232,0.55);"> 원/월</span></div>
+          </div>
+        </div>
+        <div class="price-row" style="padding:22px 24px;background:rgba(232,53,74,0.06);">
+          <div class="price-info">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
+              <span style="background:#e8354a;color:#f2ede8;font-size:10px;font-weight:700;letter-spacing:0.08em;padding:3px 7px;border-radius:2px;">BEST</span>
+              <span style="font-size:11px;background:rgba(232,53,74,0.18);color:#ff6b7a;padding:2px 8px;border-radius:10px;">👥 2인 그룹</span>
+              <span style="background:rgba(232,53,74,0.2);color:#ff6b7a;font-size:11px;font-weight:700;padding:3px 8px;border:1px solid rgba(232,53,74,0.5);border-radius:2px;">18% 할인</span>
+            </div>
+            <div style="font-size:16px;font-weight:500;margin-bottom:6px;">취미반 · 통기타 / 일렉기타 / 베이스</div>
+            <div style="font-size:13px;color:rgba(242,237,232,0.6);">친구 · 연인과 함께, 각자 결제</div>
+          </div>
+          <div class="price-tag">
+            <div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#f2ede8;">130,000<span style="font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(242,237,232,0.55);"> 원/월(1인당)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width:900px;margin:0 auto 48px;padding:0 clamp(20px,5vw,64px);">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:18px;"><span style="width:16px;height:1px;background:#e8354a;"></span><div style="font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#f2ede8;font-family:'DM Sans',sans-serif;font-weight:500;">고급반 — 더 빠르게 성장하기</div></div>
+      <div style="background:#131313;border:1px solid rgba(255,255,255,0.08);border-radius:6px;overflow:hidden;">
+        <div class="price-row" style="padding:22px 24px;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <div class="price-info">
+            <div style="font-size:16px;font-weight:500;margin-bottom:6px;">고급반 개인 · 통기타 / 일렉기타 / 베이스</div>
+            <div style="font-size:13px;color:rgba(242,237,232,0.6);">심화 커리큘럼 · 정밀한 피드백</div>
+          </div>
+          <div class="price-tag">
+            <div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#f2ede8;">240,000<span style="font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(242,237,232,0.55);"> 원/월</span></div>
+          </div>
+        </div>
+        <div class="price-row" style="padding:22px 24px;border-bottom:1px solid rgba(255,255,255,0.08);background:rgba(232,53,74,0.06);">
+          <div class="price-info">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
+              <span style="background:#e8354a;color:#f2ede8;font-size:10px;font-weight:700;letter-spacing:0.08em;padding:3px 7px;border-radius:2px;">BEST</span>
+              <span style="font-size:11px;background:rgba(232,53,74,0.18);color:#ff6b7a;padding:2px 8px;border-radius:10px;">👥 2인 그룹</span>
+              <span style="background:rgba(232,53,74,0.2);color:#ff6b7a;font-size:11px;font-weight:700;padding:3px 8px;border:1px solid rgba(232,53,74,0.5);border-radius:2px;">33% 할인</span>
+            </div>
+            <div style="font-size:16px;font-weight:500;margin-bottom:6px;">고급반 · 통기타 / 일렉기타 / 베이스</div>
+            <div style="font-size:13px;color:rgba(242,237,232,0.6);">2인 심화 레슨, 각자 결제</div>
+          </div>
+          <div class="price-tag">
+            <div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#f2ede8;">160,000<span style="font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(242,237,232,0.55);"> 원/월(1인당)</span></div>
+          </div>
+        </div>
+        <div class="price-row" style="padding:22px 24px;">
+          <div class="price-info">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
+              <span style="font-size:11px;background:rgba(255,255,255,0.06);color:rgba(242,237,232,0.7);padding:2px 8px;border-radius:10px;">👥 4인 그룹</span>
+              <span style="background:rgba(232,53,74,0.2);color:#ff6b7a;font-size:11px;font-weight:700;padding:3px 8px;border:1px solid rgba(232,53,74,0.5);border-radius:2px;">50% 할인</span>
+            </div>
+            <div style="font-size:16px;font-weight:500;margin-bottom:6px;">고급반 · 통기타 / 일렉기타 / 베이스</div>
+            <div style="font-size:13px;color:rgba(242,237,232,0.6);">4인 그룹 레슨, 각자 결제</div>
+          </div>
+          <div class="price-tag">
+            <div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#f2ede8;">120,000<span style="font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(242,237,232,0.55);"> 원/월(1인당)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width:900px;margin:0 auto 48px;padding:0 clamp(20px,5vw,64px);">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:18px;"><span style="width:16px;height:1px;background:#e8354a;"></span><div style="font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#f2ede8;font-family:'DM Sans',sans-serif;font-weight:500;">전문 · 특별 레슨</div></div>
+      <div style="background:#131313;border:1px solid rgba(255,255,255,0.08);border-radius:6px;overflow:hidden;">
+        <div class="price-row" style="padding:22px 24px;border-bottom:1px solid rgba(255,255,255,0.08);background:rgba(232,53,74,0.06);">
+          <div class="price-info">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
+              <span style="background:#e8354a;color:#f2ede8;font-size:10px;font-weight:700;letter-spacing:0.08em;padding:3px 7px;border-radius:2px;">BEST</span>
+            </div>
+            <div style="font-size:16px;font-weight:500;margin-bottom:6px;">핑거스타일 개인 레슨</div>
+            <div style="font-size:13px;color:rgba(242,237,232,0.6);">대구 유일 전문 · 코타로, 마르신, 저스틴 킹 등</div>
+          </div>
+          <div class="price-tag">
+            <div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#f2ede8;">240,000<span style="font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(242,237,232,0.55);"> 원/월</span></div>
+          </div>
+        </div>
+        <div class="price-row" style="padding:22px 24px;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <div class="price-info">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
+              <span style="font-size:11px;background:rgba(255,255,255,0.06);color:rgba(242,237,232,0.7);padding:2px 8px;border-radius:10px;">👥 2인</span>
+              <span style="background:rgba(232,53,74,0.2);color:#ff6b7a;font-size:11px;font-weight:700;padding:3px 8px;border:1px solid rgba(232,53,74,0.5);border-radius:2px;">33% 할인</span>
+            </div>
+            <div style="font-size:16px;font-weight:500;margin-bottom:6px;">핑거스타일 2인 레슨</div>
+            <div style="font-size:13px;color:rgba(242,237,232,0.6);">함께하는 핑거스타일, 각자 결제</div>
+          </div>
+          <div class="price-tag">
+            <div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#f2ede8;">160,000<span style="font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(242,237,232,0.55);"> 원/월(1인당)</span></div>
+          </div>
+        </div>
+        <div class="price-row" style="padding:22px 24px;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <div class="price-info">
+            <div style="font-size:16px;font-weight:500;margin-bottom:6px;">원데이 클래스 · 1일 체험 레슨</div>
+            <div style="font-size:13px;color:rgba(242,237,232,0.6);">시작 전 먼저 경험해보기</div>
+          </div>
+          <div class="price-tag">
+            <div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#f2ede8;">40,000<span style="font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(242,237,232,0.55);"> 원</span></div>
+          </div>
+        </div>
+        <div class="price-row" style="padding:22px 24px;">
+          <div class="price-info">
+            <div style="font-size:16px;font-weight:500;margin-bottom:6px;">건반 · 실용 피아노 개인 레슨</div>
+            <div style="font-size:13px;color:rgba(242,237,232,0.6);">코드 반주부터 실용 피아노까지</div>
+          </div>
+          <div class="price-tag">
+            <div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;color:#f2ede8;">200,000<span style="font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(242,237,232,0.55);"> 원/월</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width:1200px;margin:0 auto 90px;padding:0 clamp(20px,5vw,64px);">
+      <div style="border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:24px;display:flex;gap:14px;align-items:center;justify-content:center;text-align:center;">
+        <span style="width:6px;height:6px;background:#e8354a;border-radius:50%;flex-shrink:0;"></span>
+        <span style="font-size:14px;color:rgba(242,237,232,0.65);">수업 문의 및 시간 조율은 전화나 문자, 네이버 예약으로 편하게 연락주세요. 원데이 클래스로 먼저 체험해보실 수도 있습니다!</span>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding:0 clamp(20px,5vw,64px) 100px;">
+      <a href="https://m.booking.naver.com/booking/6/bizes/1390498?theme=place&amp;entry=pll&amp;lang=ko" target="_blank" style="background:#e8354a;color:#f2ede8;padding:15px 34px;border-radius:2px;font-size:15px;font-weight:500;">상담 문의하기</a>
+    </div>
+
+  </div>
+
+</x-dc>
